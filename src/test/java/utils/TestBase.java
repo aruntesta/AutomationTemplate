@@ -20,15 +20,19 @@ public class TestBase {
 		prop = new Properties();
 		prop.load(fis);
 
-		String browserName = prop.getProperty("browser").trim();
+		String browser_properties = prop.getProperty("browser").trim();
 		String url = prop.getProperty("URL").trim();
+		
+		String browser_maven = System.getProperty("browser").trim();
+		
+		String browser = browser_properties!=null? browser_maven : browser_properties;
 
 		if (driver == null) {
-			if (browserName.equalsIgnoreCase("firefox")) {
+			if (browser.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
-			} else if (browserName.equalsIgnoreCase("edge")) {
+			} else if (browser.equalsIgnoreCase("edge")) {
 				driver = new EdgeDriver();
-			} else if (browserName.equalsIgnoreCase("chrome")) {
+			} else if (browser.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
 			} else {
 				System.out.println("Given browser name is invalid");
