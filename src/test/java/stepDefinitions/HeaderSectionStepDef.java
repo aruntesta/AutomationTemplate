@@ -37,5 +37,11 @@ public class HeaderSectionStepDef {
 	public void user_clicks_the_check_your_order_link_in_the_header() {
 		headerSection.clickOrderHistoryLink();
 	}
+	
+	@Then("User search for the product category {string}")
+	public void user_search_for_the_product_category(String categoryName) {
+	    String categoryNameOutput = headerSection.SearchCategoryInTheSearchBox(categoryName);
+	    assertEquals(categoryNameOutput, categoryName, categoryNameOutput);
+	}
 
 }
