@@ -20,13 +20,14 @@ public class TestBase {
 		prop = new Properties();
 		prop.load(fis);
 
-		String browser_properties = prop.getProperty("browser").trim();
+		String browser = prop.getProperty("browser").trim();
 		String url = prop.getProperty("URL").trim();
 		
-		String browser_maven = System.getProperty("browser").trim();
+//		String browser_maven = System.getProperty("browser").trim();
 		
-		String browser = browser_properties!=null? browser_maven : browser_properties;
-
+		//String browser = browser_properties!=null? browser_maven : browser_properties;
+//		String browser = browser_properties;
+		
 		if (driver == null) {
 			if (browser.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
