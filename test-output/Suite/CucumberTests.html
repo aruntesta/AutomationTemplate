@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CucumberTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 21 16:18:07 IST 2026</td>
+<td>Started on:</td><td>Sat Mar 21 16:54:10 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21831 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11187 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search the product", "User navigates to the order hsitory"</td>
+<td title='cucumberOptions.FailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.FailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search the product", "User navigates to the order hsitory"</td>
 <td><div><pre>java.lang.AssertionError: Given category not found in the searchbox expected [test] but found [Given category not found in the searchbox]
 	at stepDefinitions.HeaderSectionStepDef.user_search_for_the_product_category(HeaderSectionStepDef.java:44)
 	at ✽.User search for the product category &quot;test&quot;(file:///C:/Users/iamar/eclipse-workspace/AutomationTestStore/src/test/java/features/OrderHistory.feature:13)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783078684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace783078684'><pre>java.lang.AssertionError: Given category not found in the searchbox expected [test] but found [Given category not found in the searchbox]
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1718837829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1718837829'><pre>java.lang.AssertionError: Given category not found in the searchbox expected [test] but found [Given category not found in the searchbox]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -90,27 +90,8 @@ function toggleAllBoxes() {
 	at stepDefinitions.HeaderSectionStepDef.user_search_for_the_product_category(HeaderSectionStepDef.java:44)
 	at ✽.User search for the product category &quot;test&quot;(file:///C:/Users/iamar/eclipse-workspace/AutomationTestStore/src/test/java/features/OrderHistory.feature:13)
 </pre></div></td>
-<td>9</td>
-<td>cucumberOptions.TestNGTestRunner@66982506</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login to the site using valid credentails", "User login to the site"</td>
-<td></td>
-<td>11</td>
-<td>cucumberOptions.TestNGTestRunner@66982506</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to the order history page and validates the page heading", "User navigates to the order hsitory"</td>
-<td></td>
-<td>14</td>
-<td>cucumberOptions.TestNGTestRunner@66982506</td></tr>
+<td>10</td>
+<td>cucumberOptions.FailedTestRunner@66982506</td></tr>
 </table><p>
 </body>
 </html>

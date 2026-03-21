@@ -1,0 +1,9 @@
+<suite name="Suite" parallel="methods" thread-count="1" data-provider-thread-count="2">
+
+    <test name="CucumberTests">
+        <classes>
+            <class name="cucumberOptions.FailedTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

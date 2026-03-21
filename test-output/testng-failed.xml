@@ -3,13 +3,13 @@
 <suite thread-count="1" parallel="methods" data-provider-thread-count="2" name="Failed suite [Suite]">
   <test thread-count="1" parallel="methods" name="CucumberTests(failed)">
     <classes>
-      <class name="cucumberOptions.TestNGTestRunner">
+      <class name="cucumberOptions.FailedTestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="2"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- cucumberOptions.TestNGTestRunner -->
+      </class> <!-- cucumberOptions.FailedTestRunner -->
     </classes>
   </test> <!-- CucumberTests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
