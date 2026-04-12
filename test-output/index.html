@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,11 @@
                         <a href="#" panel-name="suite-Suite" title="cucumberOptions.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User search the product&quot;, &quot;User navigates to the order hsitory&quot;)">runScenario("User search the product", "User navigates to the order hsitory")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="cucumberOptions.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User navigate to the order history page and validates the page heading&quot;, &quot;User navigates to the ord...)">runScenario("User navigate to the order history page and validates the page heading", "User navigates to the ord...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -115,11 +120,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="cucumberOptions.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User navigate to the order history page and validates the page heading&quot;, &quot;User navigates to the ord...)">runScenario("User navigate to the order history page and validates the page heading", "User navigates to the ord...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="cucumberOptions.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User login to the site using valid credentails&quot;, &quot;User login to the site&quot;)">runScenario("User login to the site using valid credentails", "User login to the site")</a> <!-- method navigator-link -->
@@ -151,8 +151,42 @@
                   <span class="parameters">("User search the product","User navigates to the order hsitory")</span>
                   <div class="stack-trace">java.lang.AssertionError: Given category not found in the searchbox expected [test] but found [Given category not found in the searchbox]
 	at stepDefinitions.HeaderSectionStepDef.user_search_for_the_product_category(HeaderSectionStepDef.java:44)
-	at ✽.User search for the product category &quot;test&quot;(file:///C:/Users/iamar/eclipse-workspace/AutomationTestStore/src/test/java/features/OrderHistory.feature:13)
+	at ✽.User search for the product category &quot;test&quot;(file:///C:/Users/iamar/eclipse-workspace/AutomationTestStore/src/test/java/features/OrderHistory.feature:14)
 ... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User navigate to the order history page and validates the page heading&quot;, &quot;User navigates to the ord...)">
+                  </a> <!-- runScenario("User navigate to the order history page and validates the page heading", "User navigates to the ord...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User navigate to the order history page and validates the page heading","User navigates to the order hsitory")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b60d14f1c25f4ab3680b2f43d8b9e45, actions {actions=[org.openqa.selenium.interactions.Sequence@4af0f3cd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\iamar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53513}, goog:processID: 26840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53513/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b60d14f1c25f4ab3680b2f43d8b9e45
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:699)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at utils.GenericUtils.hoverOverElement(GenericUtils.java:43)
+	at pageObjects.HeaderSection.clickOrderHistoryLink(HeaderSection.java:41)
+	at stepDefinitions.HeaderSectionStepDef.user_clicks_the_check_your_order_link_in_the_header(HeaderSectionStepDef.java:38)
+	at ✽.User clicks the check your order link in the header(file:///C:/Users/iamar/eclipse-workspace/AutomationTestStore/src/test/java/features/OrderHistory.feature:6)
+
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -166,16 +200,6 @@
               <span class="class-name">cucumberOptions.TestNGTestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User navigate to the order history page and validates the page heading&quot;, &quot;User navigates to the ord...)">
-                  </a> <!-- runScenario("User navigate to the order history page and validates the page heading", "User navigates to the ord...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User navigate to the order history page and validates the page heading","User navigates to the order hsitory")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;User login to the site using valid credentails&quot;, &quot;User login to the site&quot;)">
@@ -197,8 +221,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;2&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;CucumberTests&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;2&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;CucumberTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;cucumberOptions.TestNGTestRunner&quot;/&gt;
     &lt;/classes&gt;
@@ -252,20 +276,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumberOptions.TestNGTestRunner')
-data.setCell(0, 3, 13743);
+data.setCell(0, 3, 16609);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'cucumberOptions.TestNGTestRunner')
-data.setCell(1, 3, 13633);
+data.setCell(1, 3, 16605);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'cucumberOptions.TestNGTestRunner')
-data.setCell(2, 3, 10178);
+data.setCell(2, 3, 12048);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -298,21 +322,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("User login to the site using valid credentails", "User login to the site")</span>
-                <span class="method-start">806 ms</span>
+                <span class="method-start">439 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User navigate to the order history page and validates the page heading", "User navigates to the ord...)</span>
-                <span class="method-start">808 ms</span>
+                <span class="method-start">450 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User search the product", "User navigates to the order hsitory")</span>
-                <span class="method-start">14447 ms</span>
+                <span class="method-start">17057 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">24627 ms</span>
+                <span class="method-start">29108 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
