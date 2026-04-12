@@ -49,9 +49,7 @@ public class HeaderSection {
 		for (WebElement category : categories) {
 			if (category.getText().contains(categoryName)) {
 				text = text + category.getText();
-			} else {
-				text = "Given category not found in the searchbox";
-			}
+			} 
 		}
 		return text;
 

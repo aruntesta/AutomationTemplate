@@ -11,4 +11,4 @@ Feature: User navigates to the order hsitory
     Given User is on login page
     When User enters valid username and password and logged in
     And User clicks the check your order link in the header
-    Then User search for the product category "test"
+    Then User search for the product category "Men"
