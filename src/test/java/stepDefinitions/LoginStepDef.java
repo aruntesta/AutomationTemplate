@@ -38,6 +38,13 @@ public class LoginStepDef {
 		loginPage.enterPassword(loginData.getPassword());
 		loginPage.clickLoginBtn();
 	}
+	
+	@When("User enters username {string} and password {string} and logged in")
+	public void user_enters_username_and_password_and_logged_in(String Usrnme, String Pswrd) {
+		loginPage.enterUsername(Usrnme);
+		loginPage.enterPassword(Pswrd);
+		loginPage.clickLoginBtn();
+	}
 
 
 }
